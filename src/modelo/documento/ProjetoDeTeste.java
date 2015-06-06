@@ -1,5 +1,5 @@
 package modelo.documento;
 
-public class ProjetoDeTeste {
-
+public class ProjetoDeTeste extends Documento {
+	
 }

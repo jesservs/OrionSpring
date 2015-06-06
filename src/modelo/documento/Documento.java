@@ -1,6 +1,6 @@
 package modelo.documento;
 
-import java.util.Map;
+import modelo.enums.TipoNivelDeTeste;
 
 public abstract class Documento {
 
@@ -8,7 +8,9 @@ public abstract class Documento {
 
 	private String nomeDocumento;
 
-	private Map<String, String> glossario;
+	private TipoNivelDeTeste nivelDeTeste;
+
+	private Glossario glossario;
 
 	public String getIdentificador() {
 		return identificador;
@@ -26,12 +28,25 @@ public abstract class Documento {
 		this.nomeDocumento = nomeDocumento;
 	}
 
-	public Map<String, String> getGlossario() {
+	public Glossario getGlossario() {
 		return glossario;
 	}
 
-	public void setGlossario(Map<String, String> glossario) {
+	public void setGlossario(Glossario glossario) {
 		this.glossario = glossario;
+	}
+
+	public String toString() {
+		return "[identificador: " + identificador + "] [nomeDocumento: "
+				+ nomeDocumento + "] ";
+	}
+
+	public TipoNivelDeTeste getNivelDeTeste() {
+		return nivelDeTeste;
+	}
+
+	public void setNivelDeTeste(TipoNivelDeTeste nivelDeTeste) {
+		this.nivelDeTeste = nivelDeTeste;
 	}
 
 }

@@ -1,5 +1,5 @@
 package modelo.documento;
 
-public class PlanoMasterDeTeste {
+public class PlanoMasterDeTeste extends Documento {
 
 }
